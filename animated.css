@@ -1,0 +1,31 @@
+body {
+    background: #222;
+    color: rgb(0, 204, 255);
+    font-family: monospace;
+  }
+  
+  #header {
+    display: flex;
+    align-items: baseline;
+    margin: 15px;
+  }
+  
+  
+   /* blinking cursor */
+  #cursor {
+    background: rgb(0, 204, 255);
+    line-height: 10px;
+    margin-left: 1px;
+    -webkit-animation: blink 0.8s infinite;
+    width: 3px;
+    height: 15px;
+  }
+  
+  @-webkit-keyframes blink {
+    0% {background: #222}
+    50% {background: rgb(0, 204, 255)}
+    100% {background: #222}
+  }
+p{
+    font-size: 20px;
+}
