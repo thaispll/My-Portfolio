@@ -76,6 +76,7 @@ h6{
   padding: 5px 0;
   border-top: 0.5px solid blue;
   border-bottom: 0.5px solid blue;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,7 +308,6 @@ div#AlinhamentoVertical {
  transform: rotate(270deg);
  font-style: italic;
  font-family: "Courier New", Courier New, Monospace;
- background-color: purple;
  position: fixed;
  }
 
@@ -319,19 +319,26 @@ div#AlinhamentoVertical {
  .sobre_mim{
   height: 500px;
   width: 100%;
-      background-color: pink;
+  
 
  }
 
  .photo{
-    margin-left: 200px;
-    width: 300px;
-    height: 300px;
-    background-image: url('http://www.noltingthiessen.de/images/noltingthiessende/957-camisola-com-estampa-maggie-simpson-2989.jpg');
-      border: groove 1em purple;  
+    margin-top: 50px;
+    margin-left: 300px;
+    width: 450px;
+    height: 450px;
+    background-image: url('https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-9/70817883_2371313342924107_1770842688615088128_o.jpg?_nc_cat=100&_nc_sid=730e14&_nc_ohc=cmSpUwkAghsAX9qzFhT&_nc_ht=scontent-gru2-2.xx&oh=7a1c01cd990a9b1aec3aeebf319aec7b&oe=5F7575EB');
+      border: groove  1em #3747e3;  
       border-radius: 2em ;
       border-style: ridge;
 
+
+}
+
+.formações{
+   height: 500px;
+  width: 100%; 
 }
 
 /*box.hover
