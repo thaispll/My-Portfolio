@@ -3,14 +3,12 @@
 	padding: 0px;
 }
 
-html, body{
-
-}
-
 body {
     background: #333;
     color: rgb(0, 204, 255);
     font-family: monospace;
+    width: 100%;
+    height: 100%;
   }
   
   section{
@@ -38,36 +36,46 @@ body {
   
 header {
 
+    margin-top: 20px;
+    margin-bottom: 20px;
+
     text-align: left;
     margin-left: 400px;
     margin-right: 450px;
     font-size: 60px;
     display:inline-block;
+     font-size: 72px;
+  background: -webkit-linear-gradient(#448aff, #303f9f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   }
 
   #cursor {
-    background: rgb(0, 204, 255);
-    justify-content: top;
+    margin-top: 26px;
     -webkit-animation: blink 0.8s infinite;
+    margin-left: 7px;
     width: 5px;
-    height: 30px;
-     line-height: 10px;
-
-     justify-content: space-between;
-     display: inline-block;
+    height: 35px;
+    line-height: 10px;
+    display: inline-block;
+    position: absolute;
 
    }
+
 
 h6{
     margin-top:20px;
     margin-bottom:20px;
+    background-color: -webkit-linear-gradient(#448aff, #303f9f);
+    font-weight: 12px;
+
   }
 
  
   @-webkit-keyframes blink {
     0% {background: #222}
-    50% {background: rgb(0, 204, 255)}
+    50% {background: #448aff}
     100% {background: #222}
   }
   
@@ -84,8 +92,8 @@ h6{
   justify-content: center;
   align-items: center;
   height: 45px;
-  
-}
+
+  }
 
 .topnav a {
   float: right;
@@ -97,14 +105,17 @@ h6{
   margin-right: 60px; 
 
   font-size: 18px;
+  border-radius: 1.5px 15%;
 }
+
+
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #3d5afe;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #005eff;
+  background-color: #303f9f;
   color: white;
 
 }
@@ -240,6 +251,8 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   flex-direction:column;
   align-items:center;
   justify-content:space-around;
+      background-color: -webkit-linear-gradient(#448aff, black);
+
   
 }
 
@@ -336,15 +349,7 @@ input focus{}
 multiplas classes .color.bg{}
 */
 
-.Texto{
-  padding-top: 50px;
-  position: relative;
 
-  background-color: pink;
-  background-width:50%;
-  background-height:50%;
-
-}
 
 .bem-vindo{
   margin-top: 100px;
@@ -356,22 +361,46 @@ multiplas classes .color.bg{}
 .sobre_mim{
   height: 500px;
   width: 100%;
-  background-color:white;
+  background-color:#263238;
 }
   .sobre_mim > .photo{
+
     display: flex;
     margin-left: 300px;
     width: 241px;
     height: 270px;
     background-image: url('thais.png');
-    border: groove  1em #3747e3;  
+    border: groove  1em #3d5afe ;  
     border-radius: 2em ;
     border-style: ridge;
     background-repeat: no-repeat;
 }
 .Texto{
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   
+}
+.content {
+
+      display: flex;
+          flex-direction: 2 column;
+
+      
+
+
+}
+.photo {
+  margin-right: 20px;
+    width: 50%;
+    float: left;
+}
+.sobre_mim {
+
+
+
+  padding-top: 20px;
+    float:right;
+    flex-direction: 2 column;
 }
